@@ -22,11 +22,12 @@ class Doctor
   end
 
   def patients
-    self.appointments.collect(&:patient) do
-      binding.pry
-    end
+    self.appointments.collect(&:patient) 
   end
 
 end
 
-Doctor.new.patients
+p1 = Patient.new
+d1 = Doctor.new
+
+Appointment.new("1,1", p1,d1)
