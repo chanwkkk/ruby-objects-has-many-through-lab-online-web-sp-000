@@ -28,3 +28,5 @@ class Doctor
   end
 
 end
+
+Doctor.new.patients
