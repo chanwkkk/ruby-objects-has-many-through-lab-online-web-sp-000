@@ -1,4 +1,6 @@
 require 'pry'
+require './patient.rb'
+require './appointment.rb'
 class Doctor
   attr_accessor :name
   @@all=[]
