@@ -31,3 +31,4 @@ p1 = Patient.new
 d1 = Doctor.new
 
 Appointment.new("1,1", p1,d1)
+puts d1.patients
