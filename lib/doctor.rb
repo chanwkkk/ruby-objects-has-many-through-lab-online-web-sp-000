@@ -22,7 +22,7 @@ class Doctor
   end
 
   def patients
-    self.appointments.collect(&:patient) 
+    self.appointments.collect(&:patient)
   end
 
 end
