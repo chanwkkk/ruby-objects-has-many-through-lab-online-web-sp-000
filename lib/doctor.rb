@@ -29,7 +29,7 @@ class Doctor
 
 end
 
-p1 = Patient.new
+p1 = Patient.new("hi")
 d1 = Doctor.new
 
 Appointment.new("1,1", p1,d1)
