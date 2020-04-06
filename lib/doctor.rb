@@ -1,3 +1,4 @@
+require 'pry'
 class Doctor
   attr_accessor :name
   @@all=[]
@@ -21,7 +22,9 @@ class Doctor
   end
 
   def patients
-    self.appointments.collect{|appt|appt.patient}
+    self.appointments.collect(&:patient) do 
+      binding.pry
+    end
   end
 
 end
